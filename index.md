@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Living inside The Matrix
+title: Living inside the Matrix
 nav-menu: home
 ---
 
