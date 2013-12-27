@@ -1,0 +1,147 @@
+<!doctype html>
+<meta charset="utf-8">
+<head>
+<title>轲宝和小缘的故事</title>
+<style>
+  body {
+    font-family: courier, fixed;
+    font-size: 13px;
+  }
+
+  .typewriter {
+    white-space: pre-wrap;
+    margin-right: -6px;
+  }
+
+  #wrapper {
+	max-width: 360px;
+  }
+  
+  .caret {
+    background: #777;
+  }
+</style>
+
+<script src="http://code.jquery.com/jquery-2.0.3.min.js"></script>
+
+</head>
+
+<body style="margin: 24px">
+	<div id="wrapper">
+		<span id="typewriter" class="typewriter"></span>
+		<span id="typewriter2" class="typewriter"></span>
+		<span class="caret">&nbsp;</span>
+	</div>
+	
+	<div id="photo" style="display: none; position: fixed; left: 400px; top: 24px;">
+		<img src="assets/yjy/photo.jpg" width=40%/>
+	</div>
+	
+	<script type="text/javascript" src="assets/yjy/typewriter-bundle.min.js"></script>
+
+<script type="text/javascript">
+String.prototype.endsWith = function(suffix) {
+    return this.indexOf(suffix, this.length - suffix.length) !== -1;
+};
+
+  var twSpan = document.getElementById('typewriter');
+  
+  window.setInterval(function() {
+	if (twSpan.innerHTML.endsWith('轲宝')) {
+      var photoDiv = document.getElementById('photo');
+      $(photoDiv).fadeIn({duration: 10000}); 
+	}
+  }, 3000);
+
+  var typewriter = require('typewriter');
+  var tw = typewriter(twSpan).withAccuracy(100)
+                             .withMinimumSpeed(5)
+                             .withMaximumSpeed(8)
+                             .build();
+  tw.waitRange(500, 1000)
+    .type('我亲爱的杨小缘，')
+    .put('<br/><br/>')
+    .waitRange(1000, 1500)
+    .type('咱俩是从一个和今天一样寒冷的冬天的一个好友请求开始的吧？')
+	.waitRange(1000, 1500)
+	.type('（也许是从若干年前看到我的大龅牙开始？哦吼吼！），')
+	.waitRange(1000, 1500)
+	.type('那个时候我蜷缩在家里的沙发上冷的瑟瑟发抖，')
+	.waitRange(1000, 1500)
+	.type('但是在网线另一头的你用大大的字体和自来熟的语气烤的我暖暖的！')
+	.waitRange(1000, 1500)
+	.type('也就是你的热情才让内向的我（在挣扎了很久以后！）能有勇气约你出来哦！')
+	.waitRange(1000, 1500)
+	.put('<br/><br/>')
+	.type('后来，一天一天的，我们渐渐熟悉。')
+	.waitRange(1000, 1500)
+	.type('然后在我们第三次约会的湿乎乎的雨天我就决定向你表白啦！')
+	.waitRange(1000, 1500)
+	.type('好容易让我碰上的好姑娘当然要狠狠抓在手里！')
+	.waitRange(1000, 1500)
+	.type('把你拖着在又是风又是雨的玄武湖散步看樱花，')
+	.waitRange(1000, 1500)
+	.type('水湿透了鞋子，风吹的伞摇摇晃晃，')
+	.waitRange(1000, 1500)
+	.type('但是这些都没有关系，因为我已经悄悄的喜欢上了你，就像那一片悄悄掉在伞上的樱花一样。（还记得不？）')
+	.waitRange(1000, 1500)
+	.put('<br/><br/>')
+	.type('再后来我们就在一起啦！')
+	.waitRange(1000, 1500)
+	.type('总是大手牵小手，一起吃饭，一起爬山，一起看电影，一起看剧，一起睡觉，一起起床，一起自习，一起打电话，一起唱歌，一起旅行，一起回家，一起到处晃悠，一起所有所有的事情！')
+	.waitRange(1000, 1500)
+	.type('其实对我来说所谓的爱情就是这样，两个人在一起，做所有的事情，')
+	.waitRange(1000, 1500)
+	.type('不需要轰轰烈烈，不需要山盟海誓，就是这样平平常常简简单单的分享生活，像两只在茫茫无际的白色世界里一起抓鱼吃的北极熊。')
+	.waitRange(1000, 1500)
+	.put('<br/><br/>')
+	.type('让我来数数喜欢你什么哈！')
+	.waitRange(1000, 1500)
+	.type('首先喜欢你笑起来的样子（这句话写出来真俗！！但是就是喜欢有啥办法呢。。），脸上的肉肉都堆起来，眼睛眯成一条缝（哈哈哈），')
+	.waitRange(1000, 1500)
+	.type('然后喜欢你总是破坏我的发型，让总是宠着你的我也能享受一下被宠的感觉，')
+	.waitRange(1000, 1500)
+	.type('还喜欢你靠着我的时候身体的温度（你真的很上火唉亲！），')
+	.waitRange(1000, 1500)
+	.type('还喜欢你的恋旧（你说不舍得卖掉touch的时候我特别感动），')
+	.waitRange(1000, 1500)
+	.type('还喜欢你的善良，还喜欢你的坚持，还喜欢你记得我的小时候……')
+	.waitRange(1000, 1500)
+	.type('喜欢你，一直在我身边牵着我的手。')
+	.waitRange(1000, 1500)
+	.put('<br/><br/>')
+	.type('当然我们也会吵架啦，有时候我会让你不爽，有时候你会让我抓狂，谁让咱俩都是犟孩子呢！')
+	.waitRange(1000, 1500)
+	.type('不过也木有关系，人家说打是亲骂是爱嘛（我接着俗！），是吧？')
+	.waitRange(1000, 1500)
+	.type('所以生气的时候就尽量放开了吵好啦，反正你就那么点点大，我会把你抱得紧紧的，一直到你吵不动了为止！')
+	.waitRange(1000, 1500)
+	.type('再亲亲你，然后带你去吃肉！')
+	.waitRange(1000, 1500)
+	.put('<br/><br/>')
+	.type('站在2013年的尾巴上，咱俩都即将跟着地球开始绕第25个圈啦。')
+	.waitRange(1000, 1500)
+	.type('据说，地球的公转速度是一年比一年快的唉，这样下去连地铁都晕的你会不会开始晕地球啊？')
+	.waitRange(1000, 1500)
+	.type('不过没关系，有我在呢，晕的时候记得直接朝我怀里一倒，完事！')
+	.waitRange(1000, 1500)
+	.type('你看看，离了我你都没办法待在地球上了哦，')
+	.waitRange(1000, 1500)
+	.type('所以咱俩要一直一直好好的，继续大手牵小手，一起做一切一切的事情，然后四十五度角斜着，')
+	.waitRange(2000, 2000)
+	.type('一起睡着。')
+	.waitRange(1000, 1500)
+	.put('<br/><br/>')
+	.type('爱你，而且会一直一直爱你的，')
+	.waitRange(1000, 1500)
+	.put('<br/>')
+	.type('轲宝')
+    .wait(500);
+</script>
+	
+	<div>
+		<audio autoplay loop>
+			<source src="assets/yjy/bg.mp3">
+		</audio>
+	</div>
+</body>
