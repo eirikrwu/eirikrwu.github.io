@@ -31,7 +31,7 @@ title: "Windows屏幕亮度自动调节工具：autolight"
 
 用`GetForegroundWindow()`拿到当前窗口句柄，然后用`GetWindowRect`得到当前窗口的大小，再和桌面的大小做个比较就可以。这里需要注意的就是要去除当前窗口就是桌面本身的情况。
 
-第二个是调节显示器亮度的函数，这里需要显示器支持DDC/CI，就是一个控制显示器参数的接口规范，具体的可以参考[MSDN关于Low-Level Monitor Configuration Functions](http://msdn.microsoft.com/en-us/library/dd692982\(v=vs.85\).aspx)的说明。
+第二个是调节显示器亮度的函数，这里需要显示器支持DDC/CI，就是一个控制显示器参数的接口规范，具体的可以参考[MSDN关于Low-Level Monitor Configuration Functions][1]的说明。
 
 	bool SetBrightness(DWORD wTargetBrightness) {
 		if (wTargetBrightness < 0) {
@@ -90,3 +90,5 @@ title: "Windows屏幕亮度自动调节工具：autolight"
 	autolight 20 80 30
 
 表示低亮度20，高亮度80，每隔30秒检测一次用户是否在运行全屏程序。三个参数的默认值分别是25,75,60。
+
+[1]: http://msdn.microsoft.com/en-us/library/dd692982(v=vs.85).aspx
