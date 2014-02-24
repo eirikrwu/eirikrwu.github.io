@@ -29,7 +29,7 @@ localhost漏洞的原理其实很简单，有时候网站的管理员或者开�
 
 得到的URL `http://localhost.sohu.com/?%3Chtml%3E%3Cscript%3Ealert(document.cookie);%3C/script%3E%3C/html%3E`即可显示用户在搜狐上的所有cookie，如下图所示。
 
-[![使用localhost漏洞获取cookie]({{ site.url }}/assets/localhost_loophole/2.png)]({{ site.url }}/assets/localhost_loophole/2.png)
+[![使用localhost漏洞获取cookie]({{ site.url }}/assets/localhost_loophole/3.png)]({{ site.url }}/assets/localhost_loophole/3.png)
 
 这里如果将alert换成`window.location.href=`再指定一个接受地址的话即可劫持用户的会话（这里假设得到的cookie中包含搜狐的用户身份认证cookie，根据得到的cookie来看应该是没有问题的，但是并没有进一步进行测试验证）。
 
