@@ -9,6 +9,10 @@
     </div>
     <div class="content">
       {{ content }}
+
+	  <div class="share_button" style="text-align:right; margin-top: 36px;">
+		<wb:share-button appkey="gvdv7" addition="number" type="button" picture_search="false"></wb:share-button>
+	  </div>
     </div>
 
   {% unless page.categories == empty %}
@@ -28,6 +32,7 @@
   {% endunless %}  
 
     <hr>
+	<!--
     <div class="pagination">
       <ul>
       {% if page.previous %}
@@ -44,6 +49,7 @@
       </ul>
     </div>
     <hr>
+	 -->
     {% include JB/comments %}
   </div>
 </div>
