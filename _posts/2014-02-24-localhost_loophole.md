@@ -23,9 +23,9 @@ localhost漏洞的原理其实很简单，有时候网站的管理员或者开�
 
 {% highlight html %}
 <html>
-	<script>
-		alert(document.cookie);
-	</script>
+  <script>
+    alert(document.cookie);
+  </script>
 </html>
 {% endhighlight %}
 
