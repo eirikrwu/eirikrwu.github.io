@@ -3,6 +3,7 @@
 permalink: /blog/:title 
 
 encoding: UTF-8
+highlighter: pygments
 
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md"]
 pygments: true
