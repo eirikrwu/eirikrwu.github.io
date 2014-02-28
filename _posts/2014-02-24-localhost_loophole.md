@@ -22,11 +22,11 @@ localhost漏洞的原理其实很简单，有时候网站的管理员或者开�
 举个最简单的例子，假设用户本地有[一个包含XSS漏洞的程序](https://gist.github.com/eirikrwu/9188993)（这是一个简单的本地XSS漏洞示例程序，该程序监听127.0.0.1:80，并将它接收到HTTP请求中的URL的query部分作为HTTP response返回）。由于用户的浏览器在访问`http://localhost.sohu.com`时认为它在访问一个`sohu.com`的子域名，因此浏览器会将域设置为`*.sohu.com`的cookie全部包含在这个请求中一起发出，另外由于这里搜狐的cookie实际上是没有加httponly标志的（annother simple mistake！），因此可以简单的通过javascript读取出来。因此，如果将以下html代码加入到`http://localhost.sohu.com`的query部分：
 
 {% highlight html %}
-	<html>
-		<script>
-			alert(document.cookie);
-		</script>
-	</html>
+<html>
+	<script>
+		alert(document.cookie);
+	</script>
+</html>
 {% endhighlight %}
 
 得到的URL `http://localhost.sohu.com/?%3Chtml%3E%3Cscript%3Ealert(document.cookie);%3C/script%3E%3C/html%3E`即可显示用户在搜狐上的所有cookie，如下图所示。
